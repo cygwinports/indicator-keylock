@@ -1,0 +1,12 @@
+The rest are Ubuntu-specific icon themes.
+
+--- origsrc/indicator-keylock-3.1.0/pixmaps/Makefile.am	2016-03-02 01:33:43.000000000 -0600
++++ src/indicator-keylock-3.1.0/pixmaps/Makefile.am	2016-12-02 00:38:08.169847700 -0600
+@@ -1,4 +1,6 @@
+-SUBDIRS = hicolor \
++SUBDIRS = hicolor
++
++DIST_SUBDIRS = \
+           elementary \
+           Humanity \
+           Humanity-Dark \

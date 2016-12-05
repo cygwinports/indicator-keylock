@@ -1,0 +1,14 @@
+inherit gnome2
+
+NAME="indicator-keylock"
+VERSION=3.1.0
+RELEASE=1
+CATEGORY="X11"
+SUMMARY="Lock keys indicator"
+DESCRIPTION="An indicator that displays the status of the keyboard lock keys."
+HOMEPAGE="http://launchpad.net/indicator-keylock"
+SRC_URI="http://archive.ubuntu.com/ubuntu/pool/universe/i/${NAME}/${NAME}_${VERSION}.tar.xz"
+PATCH_URI="
+	3.1.0-icons.patch
+	3.1.0-ldflags.patch
+"

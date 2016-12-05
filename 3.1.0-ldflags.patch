@@ -1,0 +1,10 @@
+--- origsrc/indicator-keylock-3.1.0/src/Makefile.am	2016-03-02 01:33:43.000000000 -0600
++++ src/indicator-keylock-3.1.0/src/Makefile.am	2016-12-02 00:41:41.989003700 -0600
+@@ -5,5 +5,5 @@ indicator_keylock_SOURCES = main.c \
+                             preferences.c preferences.h
+ indicator_keylock_CFLAGS  = -g -Wall -DDATADIR=\"$(datadir)\" \
+                             $(PACKAGE_CFLAGS)
+-indicator_keylock_LDFLAGS = -g -Wall -export-dynamic -Xlinker --no-as-needed \
+-                            $(PACKAGE_LIBS)
++indicator_keylock_LDFLAGS = -g -Wall -rdynamic
++indicator_keylock_LDADD   = $(PACKAGE_LIBS)
