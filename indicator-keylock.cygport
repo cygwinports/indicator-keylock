@@ -2,7 +2,7 @@ inherit gnome2
 
 NAME="indicator-keylock"
 VERSION=3.1.0
-RELEASE=1
+RELEASE=2
 CATEGORY="X11"
 SUMMARY="Lock keys indicator"
 DESCRIPTION="An indicator that displays the status of the keyboard lock keys."
